@@ -1,0 +1,159 @@
+.nav-wrap{
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.logo{
+    color: black;
+    font-size: 40px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+nav ul {
+    flex: 1;
+    text-align: right;
+    }
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 30px;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: gray;
+    transition: .3s;
+
+}
+.btn{
+    border-radius: 35px;
+    text-decoration: dotted;
+    color: black;
+    border: 2px solid black;
+    background: transparent;
+    padding: 14px 25px;
+    margin-left: 90px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.btn:hover{
+    background: black;
+    color:white;
+    transition: .3s;
+}
+
+header{
+    width: 92%;
+    margin: 0 auto;
+    padding: 12px 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    left: 30px;
+    border-radius: 50px;
+    z-index: 2;
+    background: white;
+    box-shadow: 0 0 30px rgb(0 0 0 / 9%);
+}
+
+body{
+    text-align:center ;
+
+}
+.container {
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-auto-rows:100px 300px;
+    grid-gap:10px;
+    }
+
+    .gallery-item{
+        width:100%;
+        height:100%;
+        position:relative;
+    }
+
+    .gallery-items .image{
+        width:100%;
+        height:100%overflow:hidden;
+    }
+
+    .gallery-item .image img{
+     width:100%;
+     height:100%
+     object-fit: cover;
+     object-position:50% 50%;
+     cursor:pointer;
+     transition:.5s ease-in-out;
+    }
+
+    .gallery-item:hover .image img{
+    transform:scale(1.5);
+    }
+
+    .gallery-item .text {
+        opacity:0; 
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        color:white;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        font-size:25px;
+        pointer-events:none;
+        z-index:4;
+        transition: .3s ease-in-out;
+    }
+
+    .gallery-item:hover .text{
+        opacity:1;
+        animation: move-down .3s linear;
+        padding:1em;
+        width:100%;
+        }
+
+        @keyframes move-down{
+            0%{
+                top:10%;
+            }
+            50%{
+                top:35%;
+            }
+            100%{
+                top:50%;
+            }
+        }
+        main{
+            padding-top: 200px;
+            background-color: lightgray;
+        }
+        .cr{
+            width: 200px;
+            clip-path: circle();
+            margin-right: 1200px;
+        }
+
+        h1{
+            font-family: 'Merriweather', serif;
+        }
+         p{
+            font-family: 'Merriweather', serif;
+         }
+#projects{
+    padding-top: 70px
+}
+
+.first-section {
+    
+}
