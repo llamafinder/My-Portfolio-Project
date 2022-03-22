@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg,darkgray 0%,darkgray 30%,
+    lightgrey 30%, lightgrey 100%);
+}
+
+.contactUs {
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+    }
+.contactUs .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    }
+    .contactUs .title h2 {
+        color: white;
+        font-weight: 500;
+    }
+    .form {
+        grid-area: form;
+       }   
+       .info{
+        grid-area: info;
+    }
+ .map{
+grid-area: map;
+}
+ .contact{
+    padding: 40px;
+    background: white;
+    box-shadow: 0 5px 35px black;
+}
+ .box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: 
+    "form info"
+    "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+.contact h3 {
+    color white;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+
+}
+
+.formbox{
+    position: relative;
+    width: 100%;
+}
+
+.formBox .rows50{
+    display: flex;
+    gap: 20px;
+}
+.inputBox
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width:50%;
+    }
+
+    .formBox .row100 .inputBox {
+        width: 100%;
+
+    }
+    .inputBox span {
+        color: lightgrey;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-weight: 500;
+       }
+
+    .inputBox input {
+        padding: 10;
+        font-size: 1.1em;
+        outline: none;
+        border: 1px solid black;
+    }
